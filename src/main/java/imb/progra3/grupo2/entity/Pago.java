@@ -88,5 +88,10 @@ public class Pago {
                 ", medioDePago=" + medioDePago +
                 '}';
     }
+
+	public Pago save(Pago pago) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 

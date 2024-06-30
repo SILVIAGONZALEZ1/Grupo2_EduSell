@@ -14,6 +14,7 @@ package imb.progra3.grupo2.entity;
 	    private String apellido;
 	    private String telefono;
 	    private String email;
+	    private Boolean enabled;
 
 	    // Constructor vacío requerido por JPA
 	    public Cliente() {
@@ -67,7 +68,14 @@ package imb.progra3.grupo2.entity;
 	    public void setEmail(String email) {
 	        this.email = email;
 	    }
+	    
+	    public Boolean getEnabled() {
+			return enabled;
+		}
 
+		public void setEnabled(Boolean enabled) {
+			this.enabled = enabled;
+		}
 	    // Método toString para representación de cadena
 	    @Override
 	    public String toString() {
@@ -79,6 +87,7 @@ package imb.progra3.grupo2.entity;
 	                ", email='" + email + '\'' +
 	                '}';
 	    }
-	}
+
+}
 
 

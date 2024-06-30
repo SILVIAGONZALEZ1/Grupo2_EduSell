@@ -15,7 +15,9 @@ public class Ventas {
     private Long id_Venta;
     private double total;
     private Date fecha;
-
+    private Date dueDate;
+    private Boolean done;
+    
     @ManyToOne
     @JoinColumn(name = "id_MediodePago")
     private MediodePago mediodePago;
@@ -77,6 +79,33 @@ public class Ventas {
         this.cliente = cliente;
     }
 
+    public void setDone(boolean done) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setProducto(Producto producto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Date getDueDate() {
+		return dueDate;
+	}
+
+	public void setDueDate(Date dueDate) {
+		this.dueDate = dueDate;
+	}
+
+	public Boolean getDone() {
+		return done;
+	}
+
+	public void setDone(Boolean done) {
+		this.done = done;
+	}
+	
+	
     // Método toString para representación de cadena
     @Override
     public String toString() {
@@ -88,5 +117,7 @@ public class Ventas {
                 ", cliente=" + cliente +
                 '}';
     }
+
+	
 }
 
