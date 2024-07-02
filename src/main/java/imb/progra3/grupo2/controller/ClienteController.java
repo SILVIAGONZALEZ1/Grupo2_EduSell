@@ -23,9 +23,9 @@ public class ClienteController {
     }
 
  
- // http://localhost:8080/api/v1/disabledcliente
+ 
     
-	@GetMapping(path="disabledcliente")					// http://localhost:8080/api/v1/enabledcliente
+	@GetMapping(path="disabledcliente")					// http://localhost:8080/api/v1/disabledcliente
 	public List<Cliente> showDisabledCliente(){
 		return clienteService.getAllDisabled();
 	}

@@ -11,6 +11,8 @@ public interface ClienteRepository extends JpaRepository<Cliente, Long> {
     // Aquí puedes agregar métodos personalizados si necesitas realizar operaciones específicas para la entidad Cliente
 	public List<Cliente> findByEnabledTrue();
 	public List<Cliente> findByEnabledFalse();
+	
+	
 }
 
 

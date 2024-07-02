@@ -57,7 +57,7 @@ public class ProductoController {
 				ResponseUtil.success(producto);		
 	}	
 	
-	@GetMapping("{id}")
+	@GetMapping("{id}")					//http://localhost:8080/api/v1/producto/30
 	public ResponseEntity<APIResponse<Producto>> getProductoById(@PathVariable("id") Long id){
 		return 	productoService.exists(id)? ResponseUtil.success(productoService.findById(id)):
 				ResponseUtil.notFound("No se encontró los productos con id {0}", id);
